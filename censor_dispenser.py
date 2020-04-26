@@ -15,7 +15,7 @@ def find(word_phrase, text):
         return 'No such instances of ' + word_phrase
 
 #email1_censor = find('learning algorithms', email_one)
-# #print(email1_censor)
+#print(email1_censor)
 
 
 proprietary_terms = ["she",'she', "personality matrix", "sense of self", "self-preservation", "learning algorithm", "her", "herself"]
@@ -28,9 +28,9 @@ def find_ver2(text):
             working_text = working_text.replace(i, '*Censored Information*')
     return working_text
     
-#email2_censor = find_ver2(email_two)
-#print(email2_censor)
-print([1])
+email2_censor = find_ver2(email_two)
+print(email2_censor)
+print(email_two)
 
 def find_ver3(text):
     working_text = text
@@ -46,6 +46,6 @@ def find_ver3(text):
 
 
 #print(email_three)
-email3_censor = find_ver3(email_three)
-print(email3_censor)
+#email3_censor = find_ver3(email_three)
+#print(email3_censor)
 
